@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITMO FSPO 2.0</title>
+
+  <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap-reboot.min.css">
+
+  <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap-grid.min.css">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/timer.css">
+
+  <script src="js/script.js" defer></script>
+  <script src="/js/timer.js" defer></script>
+</head>
+<body>
+  <header class="main-header">
+
+    <div class="nav-section">
+      <div class="container">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#curriculum">Учебная программа</a></li>
+            <li><a href="#science">Наука</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="wrapper">
+      <div class="content-block">
+        <h1 class="main-title">
+          itmo fspo 2.0
+        </h1>
+        <p class="white-descr">
+          Факультет программирования среднего специального образования
+        </p>
+
+        <p class="descr">
+          Проектно-ориентированное обучение востребованной профессии:
+          подойдет и новичкам и знакомым с программированием людям. Обеспечь
+          себе готовое портфолио к концу учёбы и опыт в командных проектах.
+        </p>
+      </div>
+      <div class="picture-block">
+        <img src="img/svg/header.svg" alt="Программирование">
+      </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="countdown">
+    <div class="container">
+      <h2 class="countdown-header">До поступления осталось:</h2>
+        
+      <div id="timer">
+  
+        <div class="days-block">
+          <div class="balloon red">
+            <div class="star"></div>
+            <div class="face">
+              <div class="eye"></div>
+              <div class="mouth happy"></div>
+            </div>
+            <div class="triangle"></div>
+            <div class="string"></div>
+          </div>
+    
+          <div class="days">
+            <div class="numbers">?</div>
+            <div class="numbers-label">Дней</div>
+          </div>
+        </div>
+  
+        <div class="hours-block">
+          <div class="balloon white">
+            <div class="star-red"></div>
+            <div class="face">
+              <div class="eye"></div>
+              <div class="mouth happy"></div>
+            </div>
+            <div class="triangle"></div>
+            <div class="string"></div>
+          </div>
+  
+          <div class="hours">
+            <div class="numbers">?</div>
+            <div class="numbers-label">Часов</div>
+          </div>
+        </div>
+        
+        <div class="minutes-block">
+          <div class="balloon blue">
+            <div class="star"></div>
+            <div class="face">
+              <div class="eye"></div>
+              <div class="mouth happy"></div>
+            </div>
+            <div class="triangle"></div>
+            <div class="string"></div>
+          </div>
+  
+          <div class="minutes">
+            <div class="numbers">?</div>
+            <div class="numbers-label">Минут</div>
+          </div>
+        </div>
+  
+        <div class="seconds-block">
+          <div class="seconds">
+            <div class="numbers">?</div>
+            <div class="numbers-label">Секунд</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="countdown-descr">
+        В этом году ИТМО ФСПО перезапускается и идёт новый набор! Стань частью дружного 
+        факультета и получи профессию программиста, востребованную в любой компании.
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="about-header">
+        О факультете
+      </h2>
+      
+      <div class="wrapper">
+        <div class="content-block">
+          <p class="about-mission"> 
+            Наша миссия - сделать обучение направленным на видимый результат и конкурентноспособность: в программу
+            обучения включены командные проекты, соревновательный элемент, самоуправление факультета в целом,
+            пересечение материалов с разных дисциплин. Таким образом, к концу обучения у каждого студента должно
+            быть сформировано портфолио реальных проектов.
+          </p>
+      
+          <p class="about-activity">
+            На факультете для студентов организована внеучебная деятельность: различные объединения по интересам и
+            общеувинерситетские мероприятия. На одном из таких вы побываете уже 1 сентября &mdash; ITMO.GO, а дальше вас
+            будет ждать посвящение в первокурсники.
+          </p>
+        </div>
+
+        <div class="picture-block">
+          <img src="img/svg/about.svg" alt="Книги">
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="curriculum"></div>
+  </section>
+
+  <section class="curriculum">
+    <div class="container">
+      <section class="curriculum-content">
+        <h2 class="curriculum-content-header">
+          Учебная программа
+        </h2>
+        <p class="curriculum-content-descr">
+          Обучение осуществляется в очной форме, в целях практики включены элементы дистанционного обучения
+        </p>
+
+        <div class="curriculum-content-wrapper">
+          <div class="picture-block">
+            <img src="/img/svg/curriculum.svg" alt="Чтение">
+          </div>
+
+          <div class="content-block">
+            <div>
+              <p>Учебная программа включает в себя:</p>
+              <ul>
+                <li>&mdash;	основы алгоритмизации и программирования;</li>
+                <li>&mdash;	основы проектирования баз данных;</li>
+                <li>&mdash;	разработку программных модулей;</li>
+                <li>&mdash;	разработку мобильных приложений;</li>
+                <li>&mdash;	системное программирование;</li>
+                <li>&mdash;	элементы высшей математики и математической статистики;</li>
+                <li>&mdash;	и другие дисциплины.</li>
+              </ul>
+            </div>
+            <div>
+              <p>Помимо этого, для развития надпрофессиональных навыков студентам доступны для посещения занятия
+                по элективным дисциплинам, таким как:
+              </p>
+
+              <ul>
+                <li>&mdash;	психология профессиональной адаптации;</li>
+                <li>&mdash;	психология общения;</li>
+                <li>&mdash;	психология личности и профессиональное самоопределение;</li>
+                <li>&mdash;	экология и основы природопользования;</li>
+                <li>&mdash;	второй иностранный язык по выбору.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="curriculum-advantages">
+        <div class="row" style="margin: 0;">
+          <div class="curriculum-advantages-label col-11 col-md-6">
+            <div class="label-text">
+              <h3>Преимущества</h3>
+            </div>
+          </div>
+        </div>
+
+      <div class="curriculum-advantages-content">
+        <div class="curriculum-advantages-content-block">
+          <img src="/img/svg/advantages/1.svg" alt="Программирование">
+          <div class="advantage-label">Практика</div>
+        </div>
+
+        <div class="curriculum-advantages-content-block">
+          <img src="/img/svg/advantages/2.svg" alt="Работа в команде">
+          <div class="advantage-label">Командные проекты</div>
+        </div>
+
+        <div class="curriculum-advantages-content-block">
+          <img src="/img/svg/advantages/3.svg" alt="Обширный список предметов">
+          <div class="advantage-label">Новейшие методики</div>
+        </div>
+      </div>
+
+      </section>
+    </div>
+  </section>
+
+  <section class="life">
+    <div class="container">
+      <h2 class="life-header">
+        Жизнь факультета
+      </h2>
+
+      <div class="wrapper">
+        <div class="picture-block">
+          <img src="/img/svg/life.svg" alt="Жизнь кипит">
+        </div>
+        <div class="content-block">
+          <p>
+            Студенты принимают активное участие в жизни факультета. У нас вы найдете 
+            студсовет, клубы по интересам и спортклубы.
+          </p>
+
+          <p>
+            Раз в год студсовет проводят выборы &mdash; стать президентом студсовета
+            может каждый, у кого хватит на это сил и голосов. Решения президента студсовета
+            влияют на многое.
+          </p>
+
+          <p>
+            Команда студсовета и активисты устраивают факультетские мероприятия и праздники:
+            посвящение в первокурсники, традиционную прогулку на "кораблике", празднование
+            Нового года и многое другое.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="science" id="science">
+    <div class="container">
+      <div class="row">
+        <h2 class="science-header col-12 col-lg-8 offset-lg-4">
+          Научная деятельность
+        </h2>
+      </div>
+      <div class="content-wrapper row">
+        <div class="content-block col-12 col-md-6 col-lg-7">
+
+          <p>
+            К началу XXI века Университет ИТМО сформировался как крупный научно-образовательный
+            центр, обладающий глубокими традициями и уникальными научно-педагогическими школами.
+            ИТМО проводит множество конференций и семинаров, а также вебинаров и открытых лекций.
+          </p>
+
+          <p>
+            Студенты могут принять участие в олимпиадах, от городских до международных.
+          </p>
+
+          <p>
+            Помимо научных проектов, на факультете организованы факультативы с глубоким изучением
+            алгоритмов, программирования и робототехники.
+          </p>
+
+        </div>
+
+        <div class="picture-block col-10 col-md-6 col-lg-4">
+          <img src="/img/svg/science/2.svg" alt="Наука не загрузила эту картинку :(">
+        </div>
+
+        <div class="gap col-md-1"></div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="portfolio-header">
+        Портфолио
+      </h2>
+
+      <div class="wrapper">
+        <p>
+          Студенты проходят практики на реальных кейсах, которые потом дополняют их портфолио.
+          К концу обучения они имеют рабочие проекты на C/C++ и Java с описанием документации.
+        </p>
+
+        <div class="content-wrapper row">
+          <div class="content-block col-md-7">
+            <p>
+              В портфолио выпускника ИТМО ФСПО обычно входят:
+            </p>
+    
+            <ol>
+              <li>Десктопное приложение</li>
+              <li>Приложение для мобильных платформ</li>
+              <li>Алгоритмические задачи</li>
+              <li>Командный проект</li>
+              <li>Дипломный проект</li>
+            </ol>
+    
+            <p>
+              В процессе обучения студенты также получают softskills: умения кооперироваться и
+              коммуницировать, грамотный тайм-менеджмент и критическое мышление. Большинство из
+              таких навыков можно получить на факультативах и тренингах со свободным посещением.
+            </p>
+          </div>
+
+          <div class="picture-block col-md-5">
+            <img src="/img/svg/portfolio.svg" alt="Код">
+          </div>
+        </div>
+
+        <div class="white-block col-7 col-md-8"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="jobs-reviews">
+    <div class="container">
+      <section class="jobs">
+        <h2 class="jobs-header">
+          Места работы
+        </h2>
+
+        <div class="wrapper row">
+          <div class="jobs-item col-6 col-sm-4 col-md-2">
+            <img class="jobs-item-picture" src="/img/jobs/yandex.png" alt="Яндекс">
+            <div class="jobs-item-label">Яндекс</div>
+          </div>
+
+          <div class="jobs-item col-8 col-sm-6 col-md-4 offset-md-2">
+            <img class="jobs-item-picture" src="/img/jobs/mail_ru.png" alt="Mail.ru Group">
+            <div class="jobs-item-label">Mail.ru Group</div>
+          </div>
+
+          <div class="jobs-item col-6 sol-sm-4 col-md-2 offset-md-2">
+            <img class="jobs-item-picture" src="/img/jobs/dr_web.png" alt="Dr. Web">
+            <div class="jobs-item-label">Dr. Web</div>
+          </div>
+        </div>
+
+      </section>
+        
+      <section class="reviews">
+        <h2 class="reviews-header">
+          Отзывы
+        </h2>
+
+        <div class="wrapper">
+
+          <div class="row">
+            <div class="content-wrapper col-md-12">
+              <div class="reviews-item">
+                <div class="picture-block">
+                  <img src="/img/reviews/susanna.png" alt="Сюзанна">
+                </div>
+                <div class="content-block">
+                  <p class="content-block-name">Сюзанна Белкина</p>
+                  <p>
+                    Я уверена, что Университет ИТМО &mdash; это лучший выбор для тех, кому интересны
+                    новые технологии, общение с прогрессивными образованными людьми и саморазвитие.
+                    Я получила бесценный опыт и знания, которые многого стоят в современном мире и 
+                    позволяют быть конкурентноспособным во многих сферах деятельности.
+                  </p>
+                  <p>
+                    Особенно мне понравился практический подход. Далеко не во всех вузах и колледжах
+                    он так широко применяется. Командные проекты начинаются на первом курсе и не 
+                    заканчиваются до конца. В какие-то моменты даже думаешь, что ты не на учёбе, а 
+                    преподаватели это реальные заказчики, которым нужно сдать проект.
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="content-wrapper col-md-12">
+              <div class="reviews-item">
+                <div class="picture-block">
+                  <img src="/img/reviews/vladimir.png" alt="Владимир">
+                </div>
+                <div class="content-block">
+                  <p class="content-block-name">Владимир Фомкин</p>
+                  <p>
+                    Я с детства увлекался компьютерами и всем, что с ними связано. Во многом это
+                    определило выбор учебного заведения в пользу &laquo;главного компьютерного 
+                    вуза страны&raquo; &mdash; так тогда называли Университет ИТМО в кругах
+                    абитуриентов.
+                  </p>
+                  <p>
+                    Порадовала насыщенная жизнь факультета: мы с одногруппниками часто ходили
+                    на интересные мероприятия, в студенческие клубы. В одном из них мы занимались
+                    разработкой своего приложения.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="content-wrapper col-md-12">
+              <div class="reviews-item">
+                <div class="picture-block">
+                  <img src="/img/reviews/ivan.png" alt="Иван">
+                </div>
+                <div class="content-block">
+                  <p class="content-block-name">Иван Белоногов</p>
+                  <p>
+                    Мне нравится, что на ФСПО отлично сочетаются хорошое математическое и
+                    техническое образования. Факультет не стоит на месте, а живет и развивается.
+                    преподаватели являются специалистами в своей области, многие из них работают
+                    в крупных компаниях и могут поделиться актуальными практическими знаниями.
+                  </p>
+                  <p>
+                    Участие в олимпиадах и конференциях было моим лучшим времяпрепровождением во
+                    время учёбы. Преподаватели поддерживали такие инициативы и помогали в подготовке
+                    по мере сил.
+                  </p>
+                  <p>
+                    После ФСПО я легко поступил на бакалавриат в ИТМО, где для меня поменялись, по 
+                    большому счёту, только аудитории и преподаватели. Формат обучения на факультете
+                    очень похож на вузовский. К тому же, оказалось, что многое из программы
+                    бакалавриата мы уже проходили ранее.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </div>
+  </section>
+
+  <footer class="main-footer" id="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="logo col-10 col-lg-4">
+          <img src="/img/logo.svg" alt="Логотип Университета ИТМО">
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="copyright col-md-5">
+          <p>
+            Информация &copy; 1993-2020 Университет ИТМО
+          </p>
+  
+          <p>
+            Иллюстрации принадлежат pikisuperstar и Freepik
+          </p>
+        </div>
+  
+        <div class="contacts col-md-7">
+          <h2 class="contacts-header">
+            Контакты
+          </h2>
+  
+          <div class="contacts-phone">
+            <div class="contacts-phone-icon">
+              <img src="/icons/phone.png" alt="Телефон">
+            </div>
+            
+            <div class="contacts-phone-info">
+              <p class="contacts-phone-info-label">Телефон подразделения:</p>
+              <p class="contacts-phone-info-text">+7 (812) 234-33-55</p>
+            </div>
+          </div>
+  
+          <div class="contacts-address">
+            <div class="contacts-address-icon">
+              <img src="/icons/location.png" alt="Местоположение">
+            </div>
+  
+            <div class="contacts-address-info">
+              <p class="contacts-address-info-label">Адрес:</p>
+              <p class="contacts-address-info-text">Санкт-Петербург, Песочная набережная, д. 14</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(62741047, "init", {
+    clickmap:true,
+    trackLinks:true,
+    accurateTrackBounce:true,
+    webvisor:true
+    });
+  </script>
+
+  <noscript><div><img src="https://mc.yandex.ru/watch/62741047" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166283061-1"></script>
+  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-166283061-1');
+  </script>
+
+</body>
+</html>

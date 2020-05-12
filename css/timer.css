@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "VAGRoundCycillic";
+  src: url("../fonts/VAGRoundCycillic.ttf");
+}
+
+@font-face {
+  font-family: "LucidaConsole";
+  src: url("../fonts/LucidaConsole.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+.countdown {
+  padding-top: 68px;
+}
+
+.numbers-icon {
+  display: none;
+}
+
+#timer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #F6F4F3;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .7em;
+  letter-spacing: 5px;
+  margin-top: 80px;
+}
+
+.countdown-descr {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-family: "LucidaConsole";
+  color: #21415c;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.days, .hours, .minutes, .seconds {
+  box-sizing: border-box;
+  display: block;
+  padding: 20px;
+  width: 150px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-family: "Montserrat-Bold";
+}
+
+.days {
+  background: #EF2F3C;
+}
+
+.days-block, .hours-block, 
+.minutes-block, .seconds-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hours {
+  background: lightgray;
+  color: #183059;
+}
+
+.minutes {
+  background: #276FBF;
+}
+
+.seconds {
+  background: #F0A202;
+}
+
+.numbers {
+  color: #183059;
+  font-size: 4em;
+}
+
+.numbers-label {
+  font-family: "Lato-Regular";
+}
+
+.balloon.red {
+  z-index: -1;
+  position: relative;
+  bottom: 10%;
+  left: 55%;
+}
+
+.red {
+  background: #EF2F3C;
+  height: 65px;
+  width: 70px;
+}
+
+.red .triangle {
+  border-bottom: 14px solid #EF2F3C;
+}
+
+.red .string {
+  background: #EF2F3C;
+  border: 1px solid #EF2F3C;
+}
+
+.balloon.white {
+  z-index: -1;
+  position: relative;
+  bottom: 30%;
+}
+
+.white {
+  background: #F6F4F3;
+  height: 85px;
+  width: 75px;
+}
+
+.white .triangle {
+  border-bottom: 14px solid #F6F4F3;
+}
+
+.white .string {
+  background: #F6F4F3;
+  border: 1px solid #F6F4F3;
+}
+
+.balloon.blue {
+  z-index: -1;
+  position: relative;
+  left: 50%;
+  bottom: 25%;
+}
+
+.blue {
+  background: #276FBF;
+  height: 80px;
+  width: 80px;
+  
+}
+
+.blue .triangle {
+  border-bottom: 14px solid #276FBF;
+}
+
+.blue .string {
+  background: #276FBF;
+  border: 1px solid #276FBF;
+}
+
+.balloon {
+  border: 1px solid #000;
+  border-radius: 50% 50% 50% 50%/ 40% 40% 60% 60%;
+  z-index: 2;
+}
+
+.eye {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 40%;
+  left: 22%;
+  background: #000;
+  border-radius: 50%;
+}
+
+.eye:after {
+  content: '';
+  left: 35px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+}
+
+.mouth {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.happy {
+  border: 2px solid;
+  border-color: transparent #000 #000 transparent;
+  transform: rotate(45deg);
+}
+
+.triangle {
+  position: absolute;
+  left: 40%;
+  bottom: -10%;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+.string {
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  left: 48%;
+  top: 100%;
+  z-index: -1;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background: #F6F4F3;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star-red {
+  width: 30px;
+  height: 30px;
+  margin-left: 51px;
+  margin-top: -5px;
+  background: #EF2F3C;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+@media (max-width: 991px) {
+  .countdown-header {
+    line-height: 60px;
+  }
+
+  #timer {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .countdown {
+    padding-top: 95px;
+  }
+
+  .countdown-descr {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  
+  #timer {
+    margin-top: 90px;
+  }
+
+  .days-block, .hours-block, .minutes-block, .seconds-block {
+    width: 120px;   
+  }
+
+  .days, .hours, .minutes, .seconds {
+    margin: 0;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .numbers { 
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 575px) {
+  .countdown {
+    padding-top: 40px;
+  }
+
+  .countdown-header {
+    line-height: 35px;
+    font-size: 35px;
+  }
+
+  .countdown-descr {
+    margin-top: 40px;
+    line-height: 18px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #timer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 55px;
+  }
+
+  .days-block, .hours-block, .minutes-block {
+    position: relative;
+    width: 30%;  
+    height: 50px;     
+    border-radius: 0;
+  }
+
+  .seconds-block {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .days, .hours, .minutes, .seconds {
+    width: 100%;
+    padding: 7px 0;
+    border-radius: 5px;
+  }
+
+  .balloon.red, .balloon.blue {
+    display: none;
+    position: absolute;
+    right: 50%;
+    transform: translateX(-50%);
+    bottom: 80%;
+  }
+
+  .balloon.white {
+    display: none;
+    position: absolute;
+    bottom: 80%;
+  }
+
+  .numbers {
+    font-size: 22px;
+  }
+
+  .numbers-label {
+    font-size: 10px;
+  }
+}
